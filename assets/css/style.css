@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+
+:root {
+  --primary: #ff5a00;
+  --uiBg: #303030;
+  --secondaryBg: #eceff4;
+  --bg: #e0e0e0;
+}
+
+.kalam-bold {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--bg);
+  font-family: sans-serif;
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--primary);
+  border-radius: 0.7rem;
+  border: none;
+  padding: 0.3rem 1.2rem 0.3rem 0.3rem;
+  cursor: pointer;
+  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.1);
+}
+
+button span.btn-text {
+  background-color: #e6e6e6;
+  color: var(--uiBg);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+button ion-icon {
+  font-size: 1.5rem;
+  color: white;
+  background-color: transparent;
+  margin-left: 0.9rem;
+  padding: 0;
+}
+
+#hero {
+  background-color: var(--uiBg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 34rem;
+  padding: 7.5rem 8% 11rem;
+  border-radius: 0 0 3rem 3rem;
+  box-shadow: 0 0.6rem 1.8rem rgba(0, 0, 0, 0.2);
+}
+
+.hero-content {
+  flex: 1;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.hero-content p {
+  color: var(--primary);
+  font-size: 1.2rem;
+  margin-left: 2.5rem;
+  margin-bottom: 7.5rem;
+}
+
+.hero-content h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 3.7rem;
+}
+
+.hero-content h2 span {
+  display: block;
+}
+
+.hero-img-container {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.shape1 {
+  width: 110%;
+  max-width: 40rem;
+  transform: translateX(5%);
+}
+
+.laptop1 {
+  position: absolute;
+  width: 95%;
+  max-width: 35rem;
+  transform: translateY(-12%);
+}
+
+main {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 3.75rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4.375rem;
+}
+
+.about-card {
+  background-color: var(--bg);
+  padding: 2.5rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 0.5rem 1.8rem rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h3 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.about-text p {
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.about-text ul {
+  list-style: none;
+  margin-bottom: 1.8rem;
+}
+
+.about-text li {
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.7rem;
+  color: #444;
+}
+
+.about-card img {
+  width: 25rem;
+  border-radius: 0.9rem;
+  box-shadow: 0 0.3rem 0.9rem rgba(0, 0, 0, 0.1);
+}
+
+.partners {
+  background-color: var(--secondaryBg);
+  padding: 3rem 2.5rem;
+  border-radius: 1.8rem;
+}
+
+.partners h3 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.partner-card {
+  background-color: white;
+  border-radius: 0.9rem;
+  padding: 1.5rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.9rem;
+  box-shadow: 0 0 2.5rem rgba(255, 90, 0, 0.15);
+}
+
+.partner-card img {
+  height: 2.8rem;
+}
+
+.partner-card p {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.partner-card h4 {
+  margin-top: auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8rem;
+}
+
+.service-card {
+  background-color: white;
+  padding: 1.8rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 2.5rem rgba(255, 90, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.service-card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.service-content {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-content img {
+  width: 7.5rem;
+  height: 7.5rem;
+  object-fit: cover;
+  border-radius: 0.9rem;
+}
+
+.service-content p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.service-card button {
+  margin-top: auto;
+  align-self: flex-end;
+}
+
+footer {
+  background-color: var(--uiBg);
+  color: #ffffff;
+  border-radius: 3.1rem 3.1rem 0 0;
+  padding: 3.7rem 8% 6.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  min-height: 21rem;
+}
+
+.footer-images {
+  position: relative;
+  width: 21rem;
+  height: 15rem;
+}
+
+.footer-images .shape2 {
+  position: absolute;
+  bottom: -5rem;
+  left: -3rem;
+  width: 120%;
+  transform: scaleX(-1);
+}
+
+.footer-images .laptop2 {
+  position: absolute;
+  bottom: -0.6rem;
+  left: 0;
+  width: 90%;
+  transform: scaleX(-1);
+}
+
+.footer-content {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-top: 1.2rem;
+}
+
+.footer-content h5 {
+  font-size: 3rem;
+  text-align: right;
+}
+
+.footer-copyright {
+  position: absolute;
+  bottom: 1.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  color: #8c939e;
+}
+
+.footer-button {
+  position: absolute;
+  bottom: 1.8rem;
+  right: 8%;
+}
