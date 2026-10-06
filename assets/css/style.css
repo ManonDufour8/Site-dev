@@ -36,7 +36,7 @@ button {
 }
 
 button span.btn-text {
-  background-color: #e6e6e6;
+  background-color: var(--secondaryBg);
   color: var(--uiBg);
   font-weight: 600;
   font-size: 0.9rem;
@@ -99,13 +99,13 @@ button ion-icon {
   z-index: 10;
 }
 
-.shape1 {
+.shapeHero {
   width: 110%;
   max-width: 40rem;
   transform: translateX(5%);
 }
 
-.laptop1 {
+.laptopHero {
   position: absolute;
   width: 95%;
   max-width: 35rem;
@@ -138,11 +138,11 @@ main {
 
 .about-text h3 {
   font-size: 2rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.2rem;
 }
 
 .about-text p {
-  margin-bottom: 1.2rem;
+  margin-bottom: 3.2rem;
   line-height: 1.5;
   color: #555;
 }
@@ -271,7 +271,7 @@ footer {
   height: 15rem;
 }
 
-.footer-images .shape2 {
+.footer-images .shapeFooter {
   position: absolute;
   bottom: -5rem;
   left: -3rem;
@@ -279,7 +279,7 @@ footer {
   transform: scaleX(-1);
 }
 
-.footer-images .laptop2 {
+.footer-images .laptopFooter {
   position: absolute;
   bottom: -0.6rem;
   left: 0;
@@ -302,11 +302,11 @@ footer {
 
 .footer-copyright {
   position: absolute;
-  bottom: 1.8rem;
+  bottom: 1.4rem;
   left: 50%;
   transform: translateX(-50%);
   font-size: 0.8rem;
-  color: #8c939e;
+  color: var(--secondaryBg);
 }
 
 .footer-button {
@@ -386,7 +386,7 @@ footer {
   }
 
   .footer-button {
-    right: 50%;
+    right: 6%;
     bottom: 4rem;
   }
 }
@@ -421,6 +421,11 @@ footer {
   .service-card {
     padding: 1.8rem;
   }
+
+  .footer-button {
+    right: 6%;
+    bottom: 20rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -442,6 +447,11 @@ footer {
   .hero-content h2 {
     font-size: 1rem;
     margin-bottom: 2rem;
+  }
+
+  button span.btn-text {
+    font-size: 0.7rem;
+    padding: 0.5rem 1.3rem;
   }
 
   .partners-grid {
@@ -470,5 +480,9 @@ footer {
 
   .footer-content {
     font-size: 1.8rem;
+  }
+
+  .footer-copyright {
+    font-size: 0.6rem;
   }
 }
