@@ -58,8 +58,8 @@ button ion-icon {
   justify-content: space-between;
   align-items: center;
   min-height: 34rem;
-  padding: 7.5rem 8% 11rem;
-  border-radius: 0 0 3rem 3rem;
+  padding: 7.5rem 8% 14rem;
+  border-radius: 0 0 0 3rem;
   box-shadow: 0 0.6rem 1.8rem rgba(0, 0, 0, 0.2);
 }
 
@@ -313,4 +313,162 @@ footer {
   position: absolute;
   bottom: 1.8rem;
   right: 8%;
+}
+
+@media (max-width: 1200px) {
+  /*pour le format tablette paysage*/
+  #hero {
+    padding: 7.5rem 8% 8rem;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .about-card img {
+    width: 20rem; /* On réduit la taille de l'image */
+  }
+
+  .footer-content h5 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  /*pour le format tablette portrait*/
+  #hero {
+    padding: 5rem 8% 8rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 4rem;
+  }
+
+  .hero-content p {
+    margin-left: 0;
+    margin-bottom: 3rem;
+  }
+
+  .hero-img-container {
+    width: 100%;
+  }
+
+  .about-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-card img {
+    width: 100%;
+    max-width: 30rem;
+  }
+
+  .about-text ul {
+    text-align: left;
+  }
+
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 3rem 5% 8rem;
+    gap: 3rem;
+  }
+
+  .footer-content {
+    justify-content: center;
+  }
+
+  .footer-content h5 {
+    text-align: center;
+  }
+
+  .footer-button {
+    right: 50%;
+    bottom: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /*pour le format telephone paysage*/
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.4rem;
+  }
+
+  main {
+    gap: 3rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr; /* Une seule colonne sur mobile */
+  }
+
+  .about-card {
+    padding: 1.8rem;
+  }
+
+  .partners {
+    padding: 1.8rem;
+  }
+
+  .service-card {
+    padding: 1.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  /*pour le format telephone portrait*/
+
+  #hero {
+    padding: 5rem 8% 8rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .partners-grid {
+    grid-template-columns: 1fr; /* Une seule colonne sur mobile */
+  }
+
+  .service-content {
+    flex-direction: column; /* L'image est au dessus */
+    align-items: center;
+    text-align: center;
+  }
+
+  .service-card {
+    align-items: center;
+  }
+
+  .service-card button {
+    align-self: center; /* Bouton centré */
+    margin-top: 1rem;
+  }
+
+  .footer-images {
+    transform: scale(0.8); /* Réduit la taille des images */
+    margin-bottom: -1rem;
+  }
+
+  .footer-content {
+    font-size: 1.8rem;
+  }
 }
